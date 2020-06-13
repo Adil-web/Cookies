@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш город</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <h1 class="text-light mt-3" style="margin-left: 42%;">Ваш город:</h1>
+        <input id="city" class="form-control mt-5" type="text" placeholder="Ваш город" style="width: 80vh; margin-left: 20%;">
+        <button type="button" class="btn btn-danger mt-3" style="margin-left: 50%;" 
+            onclick="localStorage.removeItem('city');city.value=''">Clear</button><br>
+        <a class="btn btn-primary mt-5" href="checkboxes.html" role="button" style="margin-left: 44%;">Галочки предпочтений</a>
+    </div>
+
+    <script>
+        city.value = localStorage.getItem('city');
+        city.oninput = () => {
+            localStorage.setItem('city', city.value)
+        };
+    </script>
+</body>
+</html>
