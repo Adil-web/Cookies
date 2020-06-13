@@ -1,3 +1,3 @@
-# c3_practice
+# Cookies
 c3 practice
-Коллеги, обращаю ваше внимание на то, что не все браузеры разрешают куки на ресурс "file://", в частности, Chrome блокирует создание таких куков
+Вы можете сразу котрыть страницу по этой ссылке: https://o7rrx0iad2qbq3kmbqnaaw-on.drv.tw/Cookies/checkboxes.html
